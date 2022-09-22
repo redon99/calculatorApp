@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <p class="logo">calc</p>
+        <div class="theme">
+          <p>THEME</p>
+          <div class="tri-state-toggle">
+            <input
+              class="button"
+              type="radio"
+              name="toggle"
+              id="one"
+              data-theme="1"
+            />
+            <input
+              class="button"
+              type="radio"
+              name="toggle"
+              id="two"
+              data-theme="2"
+            />
+            <input
+              class="button"
+              type="radio"
+              name="toggle"
+              id="three"
+              data-theme="3"
+            />
+          </div>
+        </div>
+      </header>
+
+      <section class="section-output">
+        <p class="output">&nbsp;</p>
+      </section>
+
+      <section class="section-inputs">
+        <button class="btn btn--small" id="7" data-num="7">7</button>
+        <button class="btn btn--small" id="8" data-num="8">8</button>
+        <button class="btn btn--small" id="9" data-num="9">9</button>
+        <button class="btn btn--small btn--secondary" id="del">DEL</button>
+        <button class="btn btn--small" id="4" data-num="4">4</button>
+        <button class="btn btn--small" id="5" data-num="5">5</button>
+        <button class="btn btn--small" id="6" data-num="6">6</button>
+        <button class="btn btn--small" id="plus" data-num="+">+</button>
+        <button class="btn btn--small" id="1" data-num="1">1</button>
+        <button class="btn btn--small" id="2" data-num="2">2</button>
+        <button class="btn btn--small" id="3" data-num="3">3</button>
+        <button class="btn btn--small" id="minus" data-num="-">-</button>
+        <button class="btn btn--small" id="." data-num=".">.</button>
+        <button class="btn btn--small" id="0" data-num="0">0</button>
+        <button class="btn btn--small" id="divide" data-num="/">/</button>
+        <button class="btn btn--small" id="multiplication" data-num="*">
+          x
+        </button>
+        <button class="btn btn--large btn--secondary btn--reset">RESET</button>
+        <button class="btn btn--large btn--tertiary btn--equal">=</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
